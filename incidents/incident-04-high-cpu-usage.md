@@ -1,38 +1,38 @@
 # Incident 04 — High CPU Usage
 
 ## Ticket Summary
-User reports the workstation is extremely slow and applications are lagging.
+User reports that the workstation is extremely slow and applications are unresponsive.
 
 ## Symptoms
 - System responsiveness degraded
 - Applications slow to open
-- High CPU utilization observed
+- High CPU utilization observed in Task Manager
 
 ## Investigation
 Initial checks performed:
 
 - Opened Task Manager
 - Reviewed running processes
-- Identified process consuming excessive CPU
+- Observed CPU usage near 100%
 
 Command executed:
 
 taskmgr
 
 ## Root Cause
-A background process was consuming excessive CPU resources.
+A PowerShell process was consuming excessive CPU resources due to an infinite loop.
 
 ## Resolution
-The problematic process was terminated.
+The PowerShell process generating the CPU load was terminated.
 
 System performance returned to normal.
 
 ## Evidence
 
-High CPU process observed:
+High CPU utilization observed:
 
-![High CPU Process](screenshots/incident-04-high-cpu.png)
+![High CPU Usage](screenshots/incident-04-high-cpu.png)
 
-CPU usage normalized:
+CPU usage returned to normal after terminating the process:
 
-![CPU Normal](screenshots/incident-04-cpu-normal.png)
+![CPU Normalized](screenshots/incident-04-cpu-normal.png)
