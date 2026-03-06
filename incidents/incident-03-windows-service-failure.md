@@ -20,14 +20,22 @@ Command executed:
 services.msc
 
 ## Root Cause
-Print Spooler service stopped, preventing print jobs from processing.
+The **Print Spooler service was stopped**, preventing the system from processing print jobs.
 
 ## Resolution
-Print Spooler service restarted.
+The Print Spooler service was restarted.
 
 Printing functionality restored.
 
-## Diagnostics Evidence
+## Evidence
+
+Service failure observed:
+
+![Print Spooler Stopped](screenshots/incident-03-spooler-stopped.png)
+
+Service restored:
+
+![Print Spooler Running](screenshots/incident-03-spooler-running.png)
 
 Screenshots:
 
