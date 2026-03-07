@@ -12,11 +12,13 @@ User reports that applications cannot install and the system shows storage warni
 Initial checks performed:
 
 - Checked disk usage
-- Observed low free space on system drive
+- Observed low free space on the system drive
 
 Command executed:
 
+```
 Get-PSDrive -PSProvider FileSystem
+```
 
 ## Root Cause
 The system drive was nearly full due to large files occupying disk space.
@@ -28,10 +30,14 @@ System storage returned to normal levels.
 
 ## Evidence
 
-Low disk space observed:
+### Low Disk Space
 
-![Low Disk Space](screenshots/incident-05-disk-full.png)
+System drive showing critically low available storage.
 
-Disk space restored after cleanup:
+![Low Disk Space](../screenshots/incident-05-disk-full.png)
 
-![Disk Space Restored](screenshots/incident-05-disk-normal.png)
+### Disk Space Restored
+
+Available disk space increased after cleanup.
+
+![Disk Space Restored](../screenshots/incident-05-disk-normal.png)
