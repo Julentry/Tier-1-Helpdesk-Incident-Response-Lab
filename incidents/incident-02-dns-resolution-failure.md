@@ -13,32 +13,34 @@ Initial checks performed:
 
 - Verified network connectivity
 - Checked IP configuration
-- Tested DNS resolution
-- Executed endpoint diagnostics script
+- Tested DNS resolution using `nslookup`
 
 Command executed:
 
-.\endpoint-diagnostics.ps1
+```powershell
+nslookup microsoft.com
+```
 
 ## Root Cause
-Incorrect DNS configuration causing hostname resolution failure.
+Incorrect DNS server configuration prevented hostname resolution.
 
 ## Resolution
-DNS configuration corrected and network connectivity verified.
+DNS server configuration corrected on the workstation network adapter.
 
-User confirmed services accessible.
+DNS resolution tested again to confirm successful hostname lookup.
 
-## Diagnostics Evidence
+User confirmed websites and services were accessible.
 
-Diagnostics script collected:
+## Evidence
 
-- System information
-- Network configuration
-- Disk usage
-- Running services
-- Recent system errors
+### DNS Resolution Failure
 
-Screenshots:
+DNS lookup fails due to incorrect DNS configuration.
 
-- screenshots/incident-02-diagnostics-01.png
-- screenshots/incident-02-diagnostics-02.png
+![DNS Misconfigured](../screenshots/incident-02-dns-misconfigured.png)
+
+### DNS Resolution Restored
+
+After correcting DNS settings, hostname resolution succeeds.
+
+![DNS Fixed](../screenshots/incident-02-dns-fixed.png)
