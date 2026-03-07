@@ -1,4 +1,4 @@
-# Incident 02 — DNS Resolution Failure
+# Incident 01 — DNS Resolution Failure
 
 ## Ticket Summary
 User reports that websites and internal services cannot be reached.
@@ -37,10 +37,10 @@ User confirmed websites and services were accessible.
 
 DNS lookup fails due to incorrect DNS configuration.
 
-![DNS Misconfigured](../screenshots/incident-02-dns-misconfigured.png)
+![DNS Misconfigured](../screenshots/incident-01-dns-misconfigured.png)
 
 ### DNS Resolution Restored
 
 After correcting DNS settings, hostname resolution succeeds.
 
-![DNS Fixed](../screenshots/incident-02-dns-fixed.png)
+![DNS Fixed](../screenshots/incident-01-dns-fixed.png)
