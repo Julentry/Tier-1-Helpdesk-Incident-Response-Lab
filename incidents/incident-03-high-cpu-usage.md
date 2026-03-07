@@ -1,4 +1,4 @@
-# Incident 04 — High CPU Usage
+# Incident 03 — High CPU Usage
 
 ## Ticket Summary
 User reports that the workstation is extremely slow and applications are unresponsive.
@@ -35,10 +35,10 @@ System performance returned to normal.
 
 Task Manager showing CPU usage near 100%.
 
-![High CPU Usage](../screenshots/incident-04-high-cpu.png)
+![High CPU Usage](../screenshots/incident-03-high-cpu.png)
 
 ### CPU Usage Normalized
 
 After terminating the problematic process, CPU utilization returned to normal.
 
-![CPU Normalized](../screenshots/incident-04-cpu-normal.png)
+![CPU Normalized](../screenshots/incident-03-cpu-normal.png)
