@@ -13,36 +13,36 @@ Each incident demonstrates the full workflow used by Tier-1 support:
 ## DNS Resolution Failure
 System could not resolve domain names due to incorrect DNS configuration.
 
-[View Incident](incidents/incident-02-dns-resolution-failure.md)
+[View Incident](incidents/incident-01-dns-resolution-failure.md)
 
-![DNS Failure](screenshots/incident-02-dns-misconfigured.png)
+![DNS Failure](screenshots/incident-01-dns-misconfigured.png)
 
 ---
 
 ## Windows Service Failure (Print Spooler)
 Printing stopped because the Print Spooler service was not running.
 
-[View Incident](incidents/incident-03-windows-service-failure.md)
+[View Incident](incidents/incident-02-windows-service-failure.md)
 
-![Spooler Stopped](screenshots/incident-03-spooler-stopped.png)
+![Spooler Stopped](screenshots/incident-02-spooler-stopped.png)
 
 ---
 
 ## High CPU Usage
 System performance degraded due to a runaway PowerShell process consuming CPU resources.
 
-[View Incident](incidents/incident-04-high-cpu-usage.md)
+[View Incident](incidents/incident-03-high-cpu-usage.md)
 
-![High CPU](screenshots/incident-04-high-cpu.png)
+![High CPU](screenshots/incident-03-high-cpu.png)
 
 ---
 
 ## Low Disk Space
 System drive reached critical capacity preventing application installation.
 
-[View Incident](incidents/incident-05-disk-space-full.md)
+[View Incident](incidents/incident-04-disk-space-full.md)
 
-![Disk Full](screenshots/incident-05-disk-full.png)
+![Disk Full](screenshots/incident-04-disk-full.png)
 
 ---
 
