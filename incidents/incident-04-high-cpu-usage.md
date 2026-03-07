@@ -17,7 +17,9 @@ Initial checks performed:
 
 Command executed:
 
+```
 taskmgr
+```
 
 ## Root Cause
 A PowerShell process was consuming excessive CPU resources due to an infinite loop.
@@ -29,10 +31,14 @@ System performance returned to normal.
 
 ## Evidence
 
-High CPU utilization observed:
+### High CPU Utilization
 
-![High CPU Usage](screenshots/incident-04-high-cpu.png)
+Task Manager showing CPU usage near 100%.
 
-CPU usage returned to normal after terminating the process:
+![High CPU Usage](../screenshots/incident-04-high-cpu.png)
 
-![CPU Normalized](screenshots/incident-04-cpu-normal.png)
+### CPU Usage Normalized
+
+After terminating the problematic process, CPU utilization returned to normal.
+
+![CPU Normalized](../screenshots/incident-04-cpu-normal.png)
