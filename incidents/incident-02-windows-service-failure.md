@@ -1,4 +1,4 @@
-# Incident 03 — Windows Service Failure
+# Incident 02 — Windows Service Failure
 
 ## Ticket Summary
 User reports that printing functionality is unavailable on the workstation.
@@ -35,10 +35,10 @@ Printing functionality restored and printer jobs processed normally.
 
 Print Spooler service observed in **stopped state**.
 
-![Print Spooler Stopped](../screenshots/incident-03-spooler-stopped.png)
+![Print Spooler Stopped](../screenshots/incident-02-spooler-stopped.png)
 
 ### Service Restored
 
 Print Spooler service **running after restart**, restoring printing functionality.
 
-![Print Spooler Running](../screenshots/incident-03-spooler-running.png)
+![Print Spooler Running](../screenshots/incident-02-spooler-running.png)
