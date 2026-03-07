@@ -1,93 +1,76 @@
 # Tier-1 Helpdesk Incident Response Lab
 
-Realistic Tier-1 helpdesk troubleshooting scenarios documented as structured incident tickets.
+Hands-on Windows support scenarios documented as real helpdesk incidents.
 
-This lab demonstrates common support issues encountered in enterprise Windows environments and showcases practical troubleshooting workflows, root cause identification, and resolution documentation.
+This repository demonstrates practical Tier-1 troubleshooting used in enterprise environments: identifying symptoms, investigating root causes, applying fixes, and validating system recovery.
+
+The goal is to showcase structured troubleshooting and clear incident documentation similar to real helpdesk ticket workflows.
 
 ---
 
-# Environment
+## Incidents Covered
 
-- Windows 10 / Windows 11
-- PowerShell
-- TCP/IP networking
+### DNS Resolution Failure
+User could not access websites despite having network connectivity.  
+Troubleshooting identified incorrect DNS configuration preventing hostname resolution.
+
+Skills demonstrated:
 - DNS troubleshooting
-- Windows Services
+- `nslookup`
+- IP configuration verification
+- network connectivity validation
+
+---
+
+### Windows Service Failure (Print Spooler)
+Printing stopped working due to the **Print Spooler service being stopped**.
+
+Skills demonstrated:
+- Windows Services troubleshooting
+- service status verification
+- service restart procedures
+
+---
+
+### High CPU Usage
+System performance degraded due to a runaway PowerShell process consuming CPU resources.
+
+Skills demonstrated:
+- Task Manager diagnostics
+- process analysis
+- performance troubleshooting
+
+---
+
+### Low Disk Space
+The system drive reached critical capacity, preventing software installation and degrading performance.
+
+Skills demonstrated:
+- disk usage investigation
+- system resource monitoring
+- cleanup and validation
+
+---
+
+## Troubleshooting Workflow
+
+Each incident follows a consistent helpdesk workflow:
+
+1. User reports issue  
+2. Symptoms verified  
+3. Investigation performed  
+4. Root cause identified  
+5. Resolution applied  
+6. System functionality validated
+
+---
+
+## Skills Demonstrated
+
+- Windows 10 / Windows 11 troubleshooting
+- DNS troubleshooting
+- Windows Services management
 - Task Manager performance diagnostics
-- Disk usage monitoring
-- Helpdesk-style incident documentation
-
----
-
-# Incident Library
-
-| Incident | Category | Description |
-|---|---|---|
-| Login Failure | Authentication | User unable to sign in due to credential issue |
-| DNS Resolution Failure | Networking | System unable to resolve domain names |
-| Windows Service Failure (Print Spooler) | Windows Services | Printer service stopped preventing printing |
-| High CPU Usage | Performance | Runaway PowerShell process causing excessive CPU load |
-| Low Disk Space | System Maintenance | Endpoint disk reaching critical storage threshold |
-
-Each incident includes:
-
-- Ticket Summary  
-- Symptoms  
-- Investigation Steps  
-- Root Cause  
-- Resolution  
-- Evidence Screenshots  
-
----
-
-# Example Incident Workflow
-
-1. Incident ticket created
-2. Issue reproduced
-3. Investigation performed
-4. Root cause identified
-5. Resolution implemented
-6. Ticket closed
-
----
-
-# Repository Structure
-
-```
-Tier-1-Helpdesk-Incident-Response-Lab
-│
-├── incidents
-│   ├── incident-01-login-failure.md
-│   ├── incident-02-dns-resolution-failure.md
-│   ├── incident-03-windows-service-failure.md
-│   ├── incident-04-high-cpu-usage.md
-│   └── incident-05-disk-space-full.md
-│
-├── screenshots
-│   ├── incident-02-dns-misconfigured.png
-│   ├── incident-02-dns-fixed.png
-│   ├── incident-03-spooler-stopped.png
-│   ├── incident-03-spooler-running.png
-│   ├── incident-04-high-cpu.png
-│   ├── incident-04-cpu-normal.png
-│   ├── incident-05-disk-full.png
-│   └── incident-05-disk-normal.png
-│
-├── scripts
-│   └── endpoint-diagnostics.ps1
-│
-└── README.md
-```
-
----
-
-# Skills Demonstrated
-
-- Tier-1 troubleshooting methodology
-- Windows endpoint diagnostics
-- DNS resolution troubleshooting
-- Windows service investigation
-- Performance troubleshooting using Task Manager
 - Disk capacity monitoring
 - Root cause analysis
-- Incident documentation and resolution validation
+- Incident documentation
