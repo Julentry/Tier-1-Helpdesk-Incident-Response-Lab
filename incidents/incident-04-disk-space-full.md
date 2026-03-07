@@ -40,4 +40,4 @@ System drive showing critically low available storage.
 
 Available disk space increased after cleanup.
 
-![Disk Space Restored](../screenshots/incident-05-disk-normal.png)
+![Disk Space Restored](../screenshots/incident-04-disk-normal.png)
