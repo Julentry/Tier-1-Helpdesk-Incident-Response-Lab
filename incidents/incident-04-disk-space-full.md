@@ -1,4 +1,4 @@
-# Incident 05 — Low Disk Space
+# Incident 04 — Low Disk Space
 
 ## Ticket Summary
 User reports that applications cannot install and the system shows storage warnings.
@@ -34,7 +34,7 @@ System storage returned to normal levels.
 
 System drive showing critically low available storage.
 
-![Low Disk Space](../screenshots/incident-05-disk-full.png)
+![Low Disk Space](../screenshots/incident-04-disk-full.png)
 
 ### Disk Space Restored
 
