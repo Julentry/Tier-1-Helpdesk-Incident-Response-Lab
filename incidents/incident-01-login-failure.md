@@ -39,15 +39,24 @@ Diagnostics script collected:
 - Running services
 - Recent system errors
 
-Screenshots:
+### Screenshot Evidence
 
-- screenshots/incident-01-diagnostics-01.png
-- screenshots/incident-01-diagnostics-02.png
-- screenshots/incident-01-diagnostics-03.png
-- screenshots/incident-01-diagnostics-04.png
-- screenshots/incident-01-diagnostics-05.png
-- screenshots/incident-01-diagnostics-01.png
-- screenshots/incident-01-diagnostics-02.png
-- screenshots/incident-01-diagnostics-03.png
-- screenshots/incident-01-diagnostics-04.png
-- screenshots/incident-01-diagnostics-05.png
+System diagnostics script execution:
+
+![Diagnostics Script Start](../screenshots/incident-01-diagnostics-01.png)
+
+Network configuration and environment data collected:
+
+![Diagnostics Network Output](../screenshots/incident-01-diagnostics-02.png)
+
+Running services enumeration:
+
+![Diagnostics Services Output](../screenshots/incident-01-diagnostics-03.png)
+
+Additional service state verification:
+
+![Diagnostics Service Check](../screenshots/incident-01-diagnostics-04.png)
+
+Recent system errors reviewed from event logs:
+
+![Diagnostics Event Log Errors](../screenshots/incident-01-diagnostics-05.png)
