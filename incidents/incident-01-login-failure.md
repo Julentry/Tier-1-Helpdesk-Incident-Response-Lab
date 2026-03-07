@@ -11,16 +11,18 @@ User unable to log into Windows workstation.
 ## Investigation
 Initial checks performed:
 
-- Verified system status
+- Verified workstation operational status
 - Checked network configuration
 - Collected endpoint diagnostics using PowerShell script
 
 Command executed:
 
+```powershell
 .\endpoint-diagnostics.ps1
+```
 
 ## Root Cause
-Simulated authentication issue for troubleshooting scenario.
+User account authentication issue causing login failure.
 
 ## Resolution
 Password reset performed and login verified successfully.
@@ -39,6 +41,11 @@ Diagnostics script collected:
 
 Screenshots:
 
+- screenshots/incident-01-diagnostics-01.png
+- screenshots/incident-01-diagnostics-02.png
+- screenshots/incident-01-diagnostics-03.png
+- screenshots/incident-01-diagnostics-04.png
+- screenshots/incident-01-diagnostics-05.png
 - screenshots/incident-01-diagnostics-01.png
 - screenshots/incident-01-diagnostics-02.png
 - screenshots/incident-01-diagnostics-03.png
