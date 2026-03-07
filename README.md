@@ -1,76 +1,57 @@
 # Tier-1 Helpdesk Incident Response Lab
 
-Hands-on Windows support scenarios documented as real helpdesk incidents.
+Hands-on Windows troubleshooting scenarios documented like real helpdesk tickets.
 
-This repository demonstrates practical Tier-1 troubleshooting used in enterprise environments: identifying symptoms, investigating root causes, applying fixes, and validating system recovery.
+Each incident demonstrates the full workflow used by Tier-1 support:
 
-The goal is to showcase structured troubleshooting and clear incident documentation similar to real helpdesk ticket workflows.
-
----
-
-## Incidents Covered
-
-### DNS Resolution Failure
-User could not access websites despite having network connectivity.  
-Troubleshooting identified incorrect DNS configuration preventing hostname resolution.
-
-Skills demonstrated:
-- DNS troubleshooting
-- `nslookup`
-- IP configuration verification
-- network connectivity validation
+**Problem → Investigation → Root Cause → Resolution → Verification**
 
 ---
 
-### Windows Service Failure (Print Spooler)
-Printing stopped working due to the **Print Spooler service being stopped**.
+# Incident Library
 
-Skills demonstrated:
-- Windows Services troubleshooting
-- service status verification
-- service restart procedures
+## DNS Resolution Failure
+System could not resolve domain names due to incorrect DNS configuration.
+
+[View Incident](incidents/incident-02-dns-resolution-failure.md)
+
+![DNS Failure](screenshots/incident-02-dns-misconfigured.png)
 
 ---
 
-### High CPU Usage
+## Windows Service Failure (Print Spooler)
+Printing stopped because the Print Spooler service was not running.
+
+[View Incident](incidents/incident-03-windows-service-failure.md)
+
+![Spooler Stopped](screenshots/incident-03-spooler-stopped.png)
+
+---
+
+## High CPU Usage
 System performance degraded due to a runaway PowerShell process consuming CPU resources.
 
-Skills demonstrated:
-- Task Manager diagnostics
-- process analysis
-- performance troubleshooting
+[View Incident](incidents/incident-04-high-cpu-usage.md)
+
+![High CPU](screenshots/incident-04-high-cpu.png)
 
 ---
 
-### Low Disk Space
-The system drive reached critical capacity, preventing software installation and degrading performance.
+## Low Disk Space
+System drive reached critical capacity preventing application installation.
 
-Skills demonstrated:
-- disk usage investigation
-- system resource monitoring
-- cleanup and validation
+[View Incident](incidents/incident-05-disk-space-full.md)
 
----
-
-## Troubleshooting Workflow
-
-Each incident follows a consistent helpdesk workflow:
-
-1. User reports issue  
-2. Symptoms verified  
-3. Investigation performed  
-4. Root cause identified  
-5. Resolution applied  
-6. System functionality validated
+![Disk Full](screenshots/incident-05-disk-full.png)
 
 ---
 
-## Skills Demonstrated
+# Skills Demonstrated
 
-- Windows 10 / Windows 11 troubleshooting
+- Tier-1 troubleshooting methodology
 - DNS troubleshooting
-- Windows Services management
+- Windows service management
 - Task Manager performance diagnostics
-- Disk capacity monitoring
+- Disk capacity investigation
 - Root cause analysis
 - Incident documentation
